@@ -1,0 +1,126 @@
+{
+  "data": {
+    "nodeTeamMembers": {
+      "__typename": "NodeTeamMemberConnection",
+      "nodes": [
+        {
+          "__typename": "NodeTeamMember",
+          "id": "team-johnson",
+          "title": "Mike Johnson",
+          "path": "/team/mike-johnson",
+          "body": {
+            "processed": "<p>Mike founded Cornerstone Construction in 1999 with a vision to deliver exceptional construction services. With over 30 years of industry experience, he leads the company with a commitment to quality, safety, and client satisfaction.</p>",
+            "summary": "Mike founded Cornerstone Construction in 1999 with a vision to deliver exceptional construction services. With over 30 years of industry experience, he leads the company with a commitment to quality, "
+          },
+          "position": "President & CEO",
+          "email": "mike@cornerstoneconstruction.com",
+          "phone": "(503) 555-0101",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+            "alt": "Mike Johnson - President & CEO",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeTeamMember",
+          "id": "team-rodriguez",
+          "title": "Maria Rodriguez",
+          "path": "/team/maria-rodriguez",
+          "body": {
+            "processed": "<p>Maria oversees all construction operations, ensuring projects are delivered on time, within budget, and to the highest quality standards. Her expertise in project management and lean construction practices drives operational excellence.</p>",
+            "summary": "Maria oversees all construction operations, ensuring projects are delivered on time, within budget, and to the highest quality standards. Her expertise in project management and lean construction prac"
+          },
+          "position": "VP of Operations",
+          "email": "maria@cornerstoneconstruction.com",
+          "phone": "(503) 555-0102",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+            "alt": "Maria Rodriguez - VP of Operations",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeTeamMember",
+          "id": "team-chen",
+          "title": "David Chen",
+          "path": "/team/david-chen",
+          "body": {
+            "processed": "<p>David leads our estimating and pre-construction team, providing accurate cost projections and value engineering solutions. His background in civil engineering and construction management ensures every project starts on a solid foundation.</p>",
+            "summary": "David leads our estimating and pre-construction team, providing accurate cost projections and value engineering solutions. His background in civil engineering and construction management ensures every"
+          },
+          "position": "Director of Estimating",
+          "email": "david@cornerstoneconstruction.com",
+          "phone": "(503) 555-0103",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+            "alt": "David Chen - Director of Estimating",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

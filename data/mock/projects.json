@@ -1,0 +1,197 @@
+{
+  "data": {
+    "nodeProjects": {
+      "__typename": "NodeProjectConnection",
+      "nodes": [
+        {
+          "__typename": "NodeProject",
+          "id": "project-riverside",
+          "title": "Riverside Plaza Commercial Center",
+          "path": "/projects/riverside-plaza",
+          "body": {
+            "processed": "<p>A 120,000 sq ft mixed-use commercial development featuring retail spaces, offices, and a rooftop terrace. This LEED Gold-certified project showcases our commitment to sustainable building practices.</p><h2>Project Highlights</h2><ul><li>120,000 sq ft mixed-use space</li><li>LEED Gold certification</li><li>Underground parking for 200 vehicles</li><li>Green roof with native plantings</li></ul>",
+            "summary": "A 120,000 sq ft mixed-use commercial development featuring retail spaces, offices, and a rooftop terrace. This LEED Gold-certified project showcases our commitment to sustainable building practices.Pr"
+          },
+          "projectType": [
+            {
+              "id": "commercial",
+              "name": "commercial"
+            }
+          ],
+          "location": "Portland, OR",
+          "yearCompleted": "2024",
+          "budget": "$18.5M",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+            "alt": "Riverside Plaza Commercial Center",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodeProject",
+          "id": "project-oakwood",
+          "title": "Oakwood Estates Residential Development",
+          "path": "/projects/oakwood-estates",
+          "body": {
+            "processed": "<p>A luxury residential community of 45 custom homes built with premium materials and energy-efficient designs. Each home features smart home technology and modern architectural styling.</p><h2>Project Highlights</h2><ul><li>45 custom luxury homes</li><li>Energy Star certified construction</li><li>Smart home integration</li><li>Community amenities including pool and clubhouse</li></ul>",
+            "summary": "A luxury residential community of 45 custom homes built with premium materials and energy-efficient designs. Each home features smart home technology and modern architectural styling.Project Highlight"
+          },
+          "projectType": [
+            {
+              "id": "residential",
+              "name": "residential"
+            }
+          ],
+          "location": "Lake Oswego, OR",
+          "yearCompleted": "2023",
+          "budget": "$32M",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+            "alt": "Oakwood Estates Residential Development",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodeProject",
+          "id": "project-summit",
+          "title": "Summit Medical Center Expansion",
+          "path": "/projects/summit-medical-center",
+          "body": {
+            "processed": "<p>A 60,000 sq ft medical facility expansion including new surgical suites, imaging center, and patient recovery wings. Built to strict healthcare construction standards with minimal disruption to existing operations.</p><h2>Project Highlights</h2><ul><li>60,000 sq ft healthcare facility</li><li>State-of-the-art surgical suites</li><li>Advanced HVAC and air filtration</li><li>Completed on time during active hospital operations</li></ul>",
+            "summary": "A 60,000 sq ft medical facility expansion including new surgical suites, imaging center, and patient recovery wings. Built to strict healthcare construction standards with minimal disruption to existi"
+          },
+          "projectType": [
+            {
+              "id": "commercial",
+              "name": "commercial"
+            },
+            {
+              "id": "healthcare",
+              "name": "healthcare"
+            }
+          ],
+          "location": "Bend, OR",
+          "yearCompleted": "2024",
+          "budget": "$24M",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=800&q=80",
+            "alt": "Summit Medical Center Expansion",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": true
+        },
+        {
+          "__typename": "NodeProject",
+          "id": "project-greenfield",
+          "title": "Greenfield Distribution Warehouse",
+          "path": "/projects/greenfield-warehouse",
+          "body": {
+            "processed": "<p>A 200,000 sq ft distribution warehouse featuring advanced logistics infrastructure, automated loading docks, and sustainable design elements including solar panel arrays.</p><h2>Project Highlights</h2><ul><li>200,000 sq ft distribution center</li><li>24 automated loading docks</li><li>500kW rooftop solar array</li><li>Temperature-controlled storage zones</li></ul>",
+            "summary": "A 200,000 sq ft distribution warehouse featuring advanced logistics infrastructure, automated loading docks, and sustainable design elements including solar panel arrays.Project Highlights200,000 sq f"
+          },
+          "projectType": [
+            {
+              "id": "industrial",
+              "name": "industrial"
+            }
+          ],
+          "location": "Salem, OR",
+          "yearCompleted": "2023",
+          "budget": "$15M",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+            "alt": "Greenfield Distribution Warehouse",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "featured": false
+        }
+      ]
+    }
+  }
+}

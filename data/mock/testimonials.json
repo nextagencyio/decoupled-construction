@@ -1,0 +1,126 @@
+{
+  "data": {
+    "nodeTestimonials": {
+      "__typename": "NodeTestimonialConnection",
+      "nodes": [
+        {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-1",
+          "title": "Outstanding Commercial Project",
+          "path": "/testimonials/riverside-plaza-review",
+          "body": {
+            "processed": "<p>Cornerstone Construction delivered our commercial center on time and under budget. Their attention to detail and proactive communication throughout the project made the entire process seamless. We couldn't be happier with the results.</p>",
+            "summary": "Cornerstone Construction delivered our commercial center on time and under budget. Their attention to detail and proactive communication throughout the project made the entire process seamless. We cou"
+          },
+          "clientName": "Sarah Mitchell",
+          "projectName": "Riverside Plaza Commercial Center",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+            "alt": "Sarah Mitchell",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "rating": 5
+        },
+        {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-2",
+          "title": "Dream Home Realized",
+          "path": "/testimonials/oakwood-estates-review",
+          "body": {
+            "processed": "<p>Working with the Cornerstone team to build our custom home was an incredible experience. They listened to our vision, offered expert guidance, and the craftsmanship is outstanding. Our home exceeded every expectation.</p>",
+            "summary": "Working with the Cornerstone team to build our custom home was an incredible experience. They listened to our vision, offered expert guidance, and the craftsmanship is outstanding. Our home exceeded e"
+          },
+          "clientName": "James & Lisa Park",
+          "projectName": "Oakwood Estates Custom Home",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+            "alt": "James Park",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "rating": 5
+        },
+        {
+          "__typename": "NodeTestimonial",
+          "id": "testimonial-3",
+          "title": "Professional Healthcare Construction",
+          "path": "/testimonials/summit-medical-review",
+          "body": {
+            "processed": "<p>The expansion of our medical center was a complex project requiring construction during active operations. Cornerstone handled it flawlessly, minimizing disruption to our patients and staff while delivering a world-class facility.</p>",
+            "summary": "The expansion of our medical center was a complex project requiring construction during active operations. Cornerstone handled it flawlessly, minimizing disruption to our patients and staff while deli"
+          },
+          "clientName": "Dr. Robert Williams",
+          "projectName": "Summit Medical Center Expansion",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80",
+            "alt": "Dr. Robert Williams",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "rating": 5
+        }
+      ]
+    }
+  }
+}

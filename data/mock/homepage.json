@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Cornerstone Construction",
+          "path": "/homepage",
+          "heroTitle": "Building Excellence",
+          "heroSubtitle": "From Foundation to Finish",
+          "heroDescription": {
+            "processed": "<p>With over 25 years of experience, Cornerstone Construction delivers exceptional commercial and residential construction services. From concept to completion, we build structures that stand the test of time.</p>",
+            "summary": "With over 25 years of experience, Cornerstone Construction delivers exceptional commercial and residential construction services. From concept to completion, we build structures that stand the test of"
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-projects",
+              "title": "",
+              "number": "500+",
+              "label": "Projects Completed"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-years",
+              "title": "",
+              "number": "25+",
+              "label": "Years Experience"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-team",
+              "title": "",
+              "number": "150+",
+              "label": "Team Members"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-satisfaction",
+              "title": "",
+              "number": "98%",
+              "label": "Client Satisfaction"
+            }
+          ],
+          "featuredProjectsTitle": "Our Featured Projects",
+          "ctaTitle": "Ready to Build Your Vision?",
+          "ctaDescription": {
+            "processed": "<p>Whether you're planning a new commercial development, home renovation, or industrial facility, our experienced team is ready to bring your vision to life.</p>",
+            "summary": "Whether you're planning a new commercial development, home renovation, or industrial facility, our experienced team is ready to bring your vision to life."
+          },
+          "ctaPrimary": "Get Estimate",
+          "ctaSecondary": "View Our Work"
+        }
+      ]
+    }
+  }
+}

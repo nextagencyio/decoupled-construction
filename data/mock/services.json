@@ -1,0 +1,197 @@
+{
+  "data": {
+    "nodeServices": {
+      "__typename": "NodeServiceConnection",
+      "nodes": [
+        {
+          "__typename": "NodeService",
+          "id": "service-commercial",
+          "title": "Commercial Construction",
+          "path": "/services/commercial-construction",
+          "body": {
+            "processed": "<p>From office buildings and retail centers to hotels and restaurants, our commercial construction team delivers projects on time and within budget. We handle everything from ground-up construction to tenant improvements.</p><h2>What We Offer</h2><ul><li>Ground-up commercial construction</li><li>Tenant improvements and build-outs</li><li>Design-build services</li><li>Pre-construction planning and estimating</li><li>Sustainable and LEED-certified building</li></ul>",
+            "summary": "From office buildings and retail centers to hotels and restaurants, our commercial construction team delivers projects on time and within budget. We handle everything from ground-up construction to te"
+          },
+          "serviceArea": [
+            {
+              "id": "portland-metro",
+              "name": "portland-metro"
+            },
+            {
+              "id": "central-oregon",
+              "name": "central-oregon"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+            "alt": "Commercial Construction",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeService",
+          "id": "service-residential",
+          "title": "Residential Construction",
+          "path": "/services/residential-construction",
+          "body": {
+            "processed": "<p>Build your dream home with our expert residential construction team. From luxury custom homes to multi-family developments, we bring craftsmanship and attention to detail to every project.</p><h2>What We Offer</h2><ul><li>Custom home building</li><li>Multi-family housing developments</li><li>Home additions and expansions</li><li>Kitchen and bathroom remodeling</li><li>Energy-efficient and smart home upgrades</li></ul>",
+            "summary": "Build your dream home with our expert residential construction team. From luxury custom homes to multi-family developments, we bring craftsmanship and attention to detail to every project.What We Offe"
+          },
+          "serviceArea": [
+            {
+              "id": "portland-metro",
+              "name": "portland-metro"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
+            "alt": "Residential Construction",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeService",
+          "id": "service-renovation",
+          "title": "Renovation & Remodeling",
+          "path": "/services/renovation-remodeling",
+          "body": {
+            "processed": "<p>Transform existing spaces with our renovation and remodeling expertise. Whether it's a historic building restoration or modern office renovation, we preserve what matters while upgrading functionality.</p><h2>What We Offer</h2><ul><li>Historic building restoration</li><li>Office and commercial renovations</li><li>Seismic retrofitting</li><li>ADA compliance upgrades</li><li>Interior and exterior remodeling</li></ul>",
+            "summary": "Transform existing spaces with our renovation and remodeling expertise. Whether it's a historic building restoration or modern office renovation, we preserve what matters while upgrading functionality"
+          },
+          "serviceArea": [
+            {
+              "id": "portland-metro",
+              "name": "portland-metro"
+            },
+            {
+              "id": "central-oregon",
+              "name": "central-oregon"
+            },
+            {
+              "id": "willamette-valley",
+              "name": "willamette-valley"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80",
+            "alt": "Renovation and Remodeling",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeService",
+          "id": "service-industrial",
+          "title": "Industrial Construction",
+          "path": "/services/industrial-construction",
+          "body": {
+            "processed": "<p>We specialize in constructing warehouses, manufacturing plants, and distribution centers that meet the demanding requirements of modern industry. Our industrial projects emphasize durability, efficiency, and scalability.</p><h2>What We Offer</h2><ul><li>Warehouse and distribution centers</li><li>Manufacturing facilities</li><li>Cold storage and food processing plants</li><li>Industrial maintenance and upgrades</li><li>Environmental compliance construction</li></ul>",
+            "summary": "We specialize in constructing warehouses, manufacturing plants, and distribution centers that meet the demanding requirements of modern industry. Our industrial projects emphasize durability, efficien"
+          },
+          "serviceArea": [
+            {
+              "id": "portland-metro",
+              "name": "portland-metro"
+            },
+            {
+              "id": "central-oregon",
+              "name": "central-oregon"
+            },
+            {
+              "id": "willamette-valley",
+              "name": "willamette-valley"
+            }
+          ],
+          "image": {
+            "url": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&q=80",
+            "alt": "Industrial Construction",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

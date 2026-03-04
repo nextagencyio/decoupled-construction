@@ -1,0 +1,499 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Construction company homepage with hero, stats, featured projects, and CTA",
+      "fields": [
+        {
+          "id": "hero_title",
+          "label": "Hero Title",
+          "type": "string",
+          "description": "Main headline (e.g., 'Building Excellence')"
+        },
+        {
+          "id": "hero_subtitle",
+          "label": "Hero Subtitle",
+          "type": "string",
+          "description": "Secondary text below the title"
+        },
+        {
+          "id": "hero_description",
+          "label": "Hero Description",
+          "type": "text",
+          "description": "Longer description for the hero section"
+        },
+        {
+          "id": "stats_items",
+          "label": "Statistics",
+          "type": "paragraph(stat_item)[]",
+          "description": "Key company statistics (projects completed, years experience, etc.)"
+        },
+        {
+          "id": "featured_projects_title",
+          "label": "Featured Projects Title",
+          "type": "string"
+        },
+        {
+          "id": "cta_title",
+          "label": "CTA Section Title",
+          "type": "string"
+        },
+        {
+          "id": "cta_description",
+          "label": "CTA Description",
+          "type": "text"
+        },
+        {
+          "id": "cta_primary",
+          "label": "Primary CTA Text",
+          "type": "string"
+        },
+        {
+          "id": "cta_secondary",
+          "label": "Secondary CTA Text",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "bundle": "project",
+      "label": "Project",
+      "description": "Construction projects and portfolio items",
+      "body": true,
+      "fields": [
+        {
+          "id": "project_type",
+          "label": "Project Type",
+          "type": "term(project_types)[]",
+          "description": "Type of construction project"
+        },
+        {
+          "id": "location",
+          "label": "Location",
+          "type": "string"
+        },
+        {
+          "id": "year_completed",
+          "label": "Year Completed",
+          "type": "string"
+        },
+        {
+          "id": "budget",
+          "label": "Budget",
+          "type": "string"
+        },
+        {
+          "id": "image",
+          "label": "Featured Image",
+          "type": "image"
+        },
+        {
+          "id": "featured",
+          "label": "Featured",
+          "type": "bool"
+        }
+      ]
+    },
+    {
+      "bundle": "service",
+      "label": "Service",
+      "description": "Construction services offered by the company",
+      "body": true,
+      "fields": [
+        {
+          "id": "service_area",
+          "label": "Service Area",
+          "type": "term(service_areas)[]",
+          "description": "Geographic areas where this service is offered"
+        },
+        {
+          "id": "image",
+          "label": "Service Image",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "bundle": "team_member",
+      "label": "Team Member",
+      "description": "Company leadership and key team members",
+      "body": true,
+      "fields": [
+        {
+          "id": "position",
+          "label": "Position/Title",
+          "type": "string"
+        },
+        {
+          "id": "email",
+          "label": "Email",
+          "type": "string"
+        },
+        {
+          "id": "phone",
+          "label": "Phone",
+          "type": "string"
+        },
+        {
+          "id": "photo",
+          "label": "Photo",
+          "type": "image"
+        }
+      ]
+    },
+    {
+      "bundle": "testimonial",
+      "label": "Testimonial",
+      "description": "Client testimonials and reviews",
+      "body": true,
+      "fields": [
+        {
+          "id": "client_name",
+          "label": "Client Name",
+          "type": "string"
+        },
+        {
+          "id": "project_name",
+          "label": "Project Name",
+          "type": "string"
+        },
+        {
+          "id": "photo",
+          "label": "Client Photo",
+          "type": "image"
+        },
+        {
+          "id": "rating",
+          "label": "Rating",
+          "type": "integer"
+        }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages for about, contact, etc.",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "description": "A key statistic with number and label",
+      "fields": [
+        {
+          "id": "number",
+          "label": "Number",
+          "type": "string!",
+          "description": "The statistic value (e.g., '500+', '25 Years')"
+        },
+        {
+          "id": "label",
+          "label": "Label",
+          "type": "string!",
+          "description": "What the number represents"
+        }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-projects",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "500+",
+        "label": "Projects Completed"
+      }
+    },
+    {
+      "id": "stat-years",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "25+",
+        "label": "Years Experience"
+      }
+    },
+    {
+      "id": "stat-team",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "150+",
+        "label": "Team Members"
+      }
+    },
+    {
+      "id": "stat-satisfaction",
+      "type": "paragraph.stat_item",
+      "values": {
+        "number": "98%",
+        "label": "Client Satisfaction"
+      }
+    },
+    {
+      "id": "homepage",
+      "type": "node.homepage",
+      "path": "/homepage",
+      "values": {
+        "title": "Cornerstone Construction",
+        "hero_title": "Building Excellence",
+        "hero_subtitle": "From Foundation to Finish",
+        "hero_description": "<p>With over 25 years of experience, Cornerstone Construction delivers exceptional commercial and residential construction services. From concept to completion, we build structures that stand the test of time.</p>",
+        "stats_items": [
+          "@stat-projects",
+          "@stat-years",
+          "@stat-team",
+          "@stat-satisfaction"
+        ],
+        "featured_projects_title": "Our Featured Projects",
+        "cta_title": "Ready to Build Your Vision?",
+        "cta_description": "<p>Whether you're planning a new commercial development, home renovation, or industrial facility, our experienced team is ready to bring your vision to life.</p>",
+        "cta_primary": "Get Estimate",
+        "cta_secondary": "View Our Work"
+      }
+    },
+    {
+      "id": "project-riverside",
+      "type": "node.project",
+      "path": "/projects/riverside-plaza",
+      "values": {
+        "title": "Riverside Plaza Commercial Center",
+        "body": "<p>A 120,000 sq ft mixed-use commercial development featuring retail spaces, offices, and a rooftop terrace. This LEED Gold-certified project showcases our commitment to sustainable building practices.</p><h2>Project Highlights</h2><ul><li>120,000 sq ft mixed-use space</li><li>LEED Gold certification</li><li>Underground parking for 200 vehicles</li><li>Green roof with native plantings</li></ul>",
+        "project_type": ["commercial"],
+        "location": "Portland, OR",
+        "year_completed": "2024",
+        "budget": "$18.5M",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+          "alt": "Riverside Plaza Commercial Center"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "project-oakwood",
+      "type": "node.project",
+      "path": "/projects/oakwood-estates",
+      "values": {
+        "title": "Oakwood Estates Residential Development",
+        "body": "<p>A luxury residential community of 45 custom homes built with premium materials and energy-efficient designs. Each home features smart home technology and modern architectural styling.</p><h2>Project Highlights</h2><ul><li>45 custom luxury homes</li><li>Energy Star certified construction</li><li>Smart home integration</li><li>Community amenities including pool and clubhouse</li></ul>",
+        "project_type": ["residential"],
+        "location": "Lake Oswego, OR",
+        "year_completed": "2023",
+        "budget": "$32M",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
+          "alt": "Oakwood Estates Residential Development"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "project-summit",
+      "type": "node.project",
+      "path": "/projects/summit-medical-center",
+      "values": {
+        "title": "Summit Medical Center Expansion",
+        "body": "<p>A 60,000 sq ft medical facility expansion including new surgical suites, imaging center, and patient recovery wings. Built to strict healthcare construction standards with minimal disruption to existing operations.</p><h2>Project Highlights</h2><ul><li>60,000 sq ft healthcare facility</li><li>State-of-the-art surgical suites</li><li>Advanced HVAC and air filtration</li><li>Completed on time during active hospital operations</li></ul>",
+        "project_type": ["commercial", "healthcare"],
+        "location": "Bend, OR",
+        "year_completed": "2024",
+        "budget": "$24M",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?w=800&q=80",
+          "alt": "Summit Medical Center Expansion"
+        },
+        "featured": true
+      }
+    },
+    {
+      "id": "project-greenfield",
+      "type": "node.project",
+      "path": "/projects/greenfield-warehouse",
+      "values": {
+        "title": "Greenfield Distribution Warehouse",
+        "body": "<p>A 200,000 sq ft distribution warehouse featuring advanced logistics infrastructure, automated loading docks, and sustainable design elements including solar panel arrays.</p><h2>Project Highlights</h2><ul><li>200,000 sq ft distribution center</li><li>24 automated loading docks</li><li>500kW rooftop solar array</li><li>Temperature-controlled storage zones</li></ul>",
+        "project_type": ["industrial"],
+        "location": "Salem, OR",
+        "year_completed": "2023",
+        "budget": "$15M",
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
+          "alt": "Greenfield Distribution Warehouse"
+        },
+        "featured": false
+      }
+    },
+    {
+      "id": "service-commercial",
+      "type": "node.service",
+      "path": "/services/commercial-construction",
+      "values": {
+        "title": "Commercial Construction",
+        "body": "<p>From office buildings and retail centers to hotels and restaurants, our commercial construction team delivers projects on time and within budget. We handle everything from ground-up construction to tenant improvements.</p><h2>What We Offer</h2><ul><li>Ground-up commercial construction</li><li>Tenant improvements and build-outs</li><li>Design-build services</li><li>Pre-construction planning and estimating</li><li>Sustainable and LEED-certified building</li></ul>",
+        "service_area": ["portland-metro", "central-oregon"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80",
+          "alt": "Commercial Construction"
+        }
+      }
+    },
+    {
+      "id": "service-residential",
+      "type": "node.service",
+      "path": "/services/residential-construction",
+      "values": {
+        "title": "Residential Construction",
+        "body": "<p>Build your dream home with our expert residential construction team. From luxury custom homes to multi-family developments, we bring craftsmanship and attention to detail to every project.</p><h2>What We Offer</h2><ul><li>Custom home building</li><li>Multi-family housing developments</li><li>Home additions and expansions</li><li>Kitchen and bathroom remodeling</li><li>Energy-efficient and smart home upgrades</li></ul>",
+        "service_area": ["portland-metro"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80",
+          "alt": "Residential Construction"
+        }
+      }
+    },
+    {
+      "id": "service-renovation",
+      "type": "node.service",
+      "path": "/services/renovation-remodeling",
+      "values": {
+        "title": "Renovation & Remodeling",
+        "body": "<p>Transform existing spaces with our renovation and remodeling expertise. Whether it's a historic building restoration or modern office renovation, we preserve what matters while upgrading functionality.</p><h2>What We Offer</h2><ul><li>Historic building restoration</li><li>Office and commercial renovations</li><li>Seismic retrofitting</li><li>ADA compliance upgrades</li><li>Interior and exterior remodeling</li></ul>",
+        "service_area": ["portland-metro", "central-oregon", "willamette-valley"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=800&q=80",
+          "alt": "Renovation and Remodeling"
+        }
+      }
+    },
+    {
+      "id": "service-industrial",
+      "type": "node.service",
+      "path": "/services/industrial-construction",
+      "values": {
+        "title": "Industrial Construction",
+        "body": "<p>We specialize in constructing warehouses, manufacturing plants, and distribution centers that meet the demanding requirements of modern industry. Our industrial projects emphasize durability, efficiency, and scalability.</p><h2>What We Offer</h2><ul><li>Warehouse and distribution centers</li><li>Manufacturing facilities</li><li>Cold storage and food processing plants</li><li>Industrial maintenance and upgrades</li><li>Environmental compliance construction</li></ul>",
+        "service_area": ["portland-metro", "central-oregon", "willamette-valley"],
+        "image": {
+          "uri": "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=800&q=80",
+          "alt": "Industrial Construction"
+        }
+      }
+    },
+    {
+      "id": "team-johnson",
+      "type": "node.team_member",
+      "path": "/team/mike-johnson",
+      "values": {
+        "title": "Mike Johnson",
+        "body": "<p>Mike founded Cornerstone Construction in 1999 with a vision to deliver exceptional construction services. With over 30 years of industry experience, he leads the company with a commitment to quality, safety, and client satisfaction.</p>",
+        "position": "President & CEO",
+        "email": "mike@cornerstoneconstruction.com",
+        "phone": "(503) 555-0101",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+          "alt": "Mike Johnson - President & CEO"
+        }
+      }
+    },
+    {
+      "id": "team-rodriguez",
+      "type": "node.team_member",
+      "path": "/team/maria-rodriguez",
+      "values": {
+        "title": "Maria Rodriguez",
+        "body": "<p>Maria oversees all construction operations, ensuring projects are delivered on time, within budget, and to the highest quality standards. Her expertise in project management and lean construction practices drives operational excellence.</p>",
+        "position": "VP of Operations",
+        "email": "maria@cornerstoneconstruction.com",
+        "phone": "(503) 555-0102",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+          "alt": "Maria Rodriguez - VP of Operations"
+        }
+      }
+    },
+    {
+      "id": "team-chen",
+      "type": "node.team_member",
+      "path": "/team/david-chen",
+      "values": {
+        "title": "David Chen",
+        "body": "<p>David leads our estimating and pre-construction team, providing accurate cost projections and value engineering solutions. His background in civil engineering and construction management ensures every project starts on a solid foundation.</p>",
+        "position": "Director of Estimating",
+        "email": "david@cornerstoneconstruction.com",
+        "phone": "(503) 555-0103",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+          "alt": "David Chen - Director of Estimating"
+        }
+      }
+    },
+    {
+      "id": "testimonial-1",
+      "type": "node.testimonial",
+      "path": "/testimonials/riverside-plaza-review",
+      "values": {
+        "title": "Outstanding Commercial Project",
+        "body": "<p>Cornerstone Construction delivered our commercial center on time and under budget. Their attention to detail and proactive communication throughout the project made the entire process seamless. We couldn't be happier with the results.</p>",
+        "client_name": "Sarah Mitchell",
+        "project_name": "Riverside Plaza Commercial Center",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+          "alt": "Sarah Mitchell"
+        },
+        "rating": 5
+      }
+    },
+    {
+      "id": "testimonial-2",
+      "type": "node.testimonial",
+      "path": "/testimonials/oakwood-estates-review",
+      "values": {
+        "title": "Dream Home Realized",
+        "body": "<p>Working with the Cornerstone team to build our custom home was an incredible experience. They listened to our vision, offered expert guidance, and the craftsmanship is outstanding. Our home exceeded every expectation.</p>",
+        "client_name": "James & Lisa Park",
+        "project_name": "Oakwood Estates Custom Home",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80",
+          "alt": "James Park"
+        },
+        "rating": 5
+      }
+    },
+    {
+      "id": "testimonial-3",
+      "type": "node.testimonial",
+      "path": "/testimonials/summit-medical-review",
+      "values": {
+        "title": "Professional Healthcare Construction",
+        "body": "<p>The expansion of our medical center was a complex project requiring construction during active operations. Cornerstone handled it flawlessly, minimizing disruption to our patients and staff while delivering a world-class facility.</p>",
+        "client_name": "Dr. Robert Williams",
+        "project_name": "Summit Medical Center Expansion",
+        "photo": {
+          "uri": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&q=80",
+          "alt": "Dr. Robert Williams"
+        },
+        "rating": 5
+      }
+    },
+    {
+      "id": "page-about",
+      "type": "node.page",
+      "path": "/about",
+      "values": {
+        "title": "About Cornerstone Construction",
+        "body": "<p>Founded in 1999, Cornerstone Construction has grown from a small general contracting firm to one of the Pacific Northwest's most trusted construction companies. We specialize in commercial, residential, and industrial construction projects that transform communities.</p><h2>Our Mission</h2><p>To deliver exceptional construction services that exceed client expectations through quality craftsmanship, innovative solutions, and unwavering commitment to safety and sustainability.</p><h2>Our Values</h2><ul><li><strong>Quality</strong> - We never compromise on materials or workmanship</li><li><strong>Safety</strong> - Zero incidents is our daily goal</li><li><strong>Integrity</strong> - We do what we say and stand behind our work</li><li><strong>Innovation</strong> - We embrace new technologies and methods</li></ul><h2>Certifications</h2><p>We are licensed, bonded, and insured. Our team holds certifications in LEED construction, OSHA safety, and numerous trade specialties.</p>"
+      }
+    },
+    {
+      "id": "page-contact",
+      "type": "node.page",
+      "path": "/contact",
+      "values": {
+        "title": "Contact Us",
+        "body": "<h2>Get in Touch</h2><p>Ready to start your next construction project? Our team is here to help you every step of the way.</p><h2>Office Location</h2><p>Cornerstone Construction<br/>4521 NW Industrial Way<br/>Portland, OR 97210</p><h2>Hours</h2><ul><li><strong>Monday - Friday:</strong> 7:00 AM - 5:00 PM</li><li><strong>Saturday:</strong> By appointment</li><li><strong>Sunday:</strong> Closed</li></ul><h2>Phone & Email</h2><p>Phone: (503) 555-0100<br/>Email: info@cornerstoneconstruction.com</p>"
+      }
+    }
+  ]
+}
