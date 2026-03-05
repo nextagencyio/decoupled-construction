@@ -10,6 +10,7 @@ import ResponsiveImage from './ResponsiveImage'
 export default function ProjectsPreview() {
   const { data, loading, error } = useQuery<ProjectsData>(GET_PROJECTS, { variables: { first: 3 } })
   const items = data?.nodeProjects?.nodes || []
+  const featuredItems = items.slice(0, 3)
 
   if (loading) {
     return (
@@ -34,7 +35,7 @@ export default function ProjectsPreview() {
     )
   }
 
-  if (error || items.length === 0) return null
+  if (error || featuredItems.length === 0) return null
 
   return (
     <section className="py-16 md:py-20 bg-white">
@@ -44,7 +45,7 @@ export default function ProjectsPreview() {
           <p className="text-gray-600 max-w-2xl mx-auto">Delivering excellence across commercial, residential, and industrial construction</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {items.map((item: DrupalProject) => (
+          {featuredItems.map((item: DrupalProject) => (
             <Link
               key={item.id}
               href={item.path || `/projects/${item.id}`}

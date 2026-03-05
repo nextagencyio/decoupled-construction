@@ -144,52 +144,6 @@
             ]
           },
           "featured": true
-        },
-        {
-          "__typename": "NodeProject",
-          "id": "project-greenfield",
-          "title": "Greenfield Distribution Warehouse",
-          "path": "/projects/greenfield-warehouse",
-          "body": {
-            "processed": "<p>A 200,000 sq ft distribution warehouse featuring advanced logistics infrastructure, automated loading docks, and sustainable design elements including solar panel arrays.</p><h2>Project Highlights</h2><ul><li>200,000 sq ft distribution center</li><li>24 automated loading docks</li><li>500kW rooftop solar array</li><li>Temperature-controlled storage zones</li></ul>",
-            "summary": "A 200,000 sq ft distribution warehouse featuring advanced logistics infrastructure, automated loading docks, and sustainable design elements including solar panel arrays.Project Highlights200,000 sq f"
-          },
-          "projectType": [
-            {
-              "id": "industrial",
-              "name": "industrial"
-            }
-          ],
-          "location": "Salem, OR",
-          "yearCompleted": "2023",
-          "budget": "$15M",
-          "image": {
-            "url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
-            "alt": "Greenfield Distribution Warehouse",
-            "width": 800,
-            "height": 533,
-            "variations": [
-              {
-                "name": "LARGE",
-                "url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80",
-                "width": 800,
-                "height": 533
-              },
-              {
-                "name": "MEDIUM",
-                "url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=480&q=80",
-                "width": 480,
-                "height": 320
-              },
-              {
-                "name": "THUMBNAIL",
-                "url": "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=200&q=80",
-                "width": 200,
-                "height": 133
-              }
-            ]
-          },
-          "featured": false
         }
       ]
     }
