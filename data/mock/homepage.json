@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-projects",
               "title": "",
-              "number": "500+",
+              "number": "500+", "value": "500+",
               "label": "Projects Completed"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-years",
               "title": "",
-              "number": "25+",
+              "number": "25+", "value": "25+",
               "label": "Years Experience"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-team",
               "title": "",
-              "number": "150+",
+              "number": "150+", "value": "150+",
               "label": "Team Members"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-satisfaction",
               "title": "",
-              "number": "98%",
+              "number": "98%", "value": "98%",
               "label": "Client Satisfaction"
             }
           ],
