@@ -2,13 +2,13 @@
 
 import Link from 'next/link'
 import { useQuery } from '@apollo/client'
-import { GET_PROJECTS } from '@/lib/queries'
+import { GET_PROJECTS_DOC } from '@/lib/queries'
 import { ProjectsData, DrupalProject } from '@/lib/types'
 import { ArrowRight, Wrench } from 'lucide-react'
 import ResponsiveImage from './ResponsiveImage'
 
 export default function ProjectsPreview() {
-  const { data, loading, error } = useQuery<ProjectsData>(GET_PROJECTS, { variables: { first: 3 } })
+  const { data, loading, error } = useQuery<ProjectsData>(GET_PROJECTS_DOC, { variables: { first: 3 } })
   const items = data?.nodeProjects?.nodes || []
   const featuredItems = items.slice(0, 3)
 

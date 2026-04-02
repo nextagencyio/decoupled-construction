@@ -1,4 +1,6 @@
-// Tagged template that returns the query string
+import { gql as gqlParse } from '@apollo/client'
+
+// Tagged template that returns the query string for use with client.raw()
 const gql = (strings: TemplateStringsArray, ...values: any[]) => strings.reduce((a, s, i) => a + s + (values[i] || ''), '')
 
 export const GET_HOMEPAGE_DATA = gql`
@@ -164,3 +166,7 @@ export const GET_NODE_BY_PATH = gql`
     }
   }
 `
+
+// Apollo DocumentNode versions for use with useQuery()
+export const GET_PROJECTS_DOC = gqlParse(GET_PROJECTS)
+

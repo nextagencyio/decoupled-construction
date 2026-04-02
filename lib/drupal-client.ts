@@ -88,7 +88,44 @@ export function getClient(): TypedClient {
           query ($path: String!) {
             route(path: $path) {
               ... on RouteInternal {
-                entity { ... on NodePage { __typename id title path body { processed } } }
+                entity {
+                  ... on NodePage { __typename id title path body { processed } }
+                  ... on NodeProject {
+                    __typename id title path
+                    body { processed summary }
+                    projectType { ... on TermInterface { id name } }
+                    location yearCompleted budget
+                    image { url alt width height variations(styles: [LARGE, MEDIUM]) { name url width height } }
+                    featured
+                  }
+                  ... on NodeService {
+                    __typename id title path
+                    body { processed }
+                    serviceArea { ... on TermInterface { id name } }
+                    image { url alt width height variations(styles: [LARGE, MEDIUM]) { name url width height } }
+                  }
+                  ... on NodeTeamMember {
+                    __typename id title path
+                    body { processed }
+                    position email phone
+                    photo { url alt width height variations(styles: [LARGE, MEDIUM]) { name url width height } }
+                  }
+                  ... on NodeTestimonial {
+                    __typename id title path
+                    body { processed }
+                    clientName projectName rating
+                    photo { url alt width height variations(styles: [MEDIUM, THUMBNAIL]) { name url width height } }
+                  }
+                  ... on NodeHomepage {
+                    __typename id title
+                    heroTitle heroSubtitle
+                    heroDescription { processed }
+                    statsItems { ... on ParagraphStatItem { id number label } }
+                    featuredProjectsTitle
+                    ctaTitle ctaDescription { processed }
+                    ctaPrimary ctaSecondary
+                  }
+                }
               }
             }
           }
